@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------------
+   Tailwind v4 entry + Topmed design tokens
+   ------------------------------------------------------------------ */
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette (sampled from the Topmed logo / mockup) */
+  --color-brand: #e3132c;
+  --color-brand-dark: #bf0f24;
+  --color-navy: #12305a;
+  --color-slate-soft: #5b6b80;
+
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+
+  /* Custom animations used by the welcome screen */
+  --animate-flow: flow 3s linear infinite;
+  --animate-rise: rise 0.6s ease-out both;
+  --animate-float: float 4s ease-in-out infinite;
+}
+
+@keyframes flow  { to { stroke-dashoffset: -40; } }
+@keyframes rise  { from { opacity: 0; transform: translateY(14px); } }
+@keyframes float { 50% { transform: translateY(-6px); } }

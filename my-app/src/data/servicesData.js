@@ -1,0 +1,52 @@
+import { Database, Brain, Activity, Coins, Workflow, MonitorCheck, Building2, Users, ClipboardCheck, Handshake } from "lucide-react";
+
+// Service categories (colour-coded on the cards)
+export const CATEGORIES = [
+  { id: "data", name: "Data & Intelligence", color: "#e3132c" },
+  { id: "ops", name: "Operations & Performance", color: "#12305a" },
+  { id: "delivery", name: "Transformation & Delivery", color: "#0ea5e9" },
+];
+
+// The 10 Topmed services (names follow the Topmed website menu)
+export const SERVICES = [
+  { id: "bigdata", cat: "data", icon: Database, name: "Big Data Analytics",
+    tagline: "Turn scattered healthcare data into one trusted source of insight.",
+    about: "We integrate and clean data from across your systems, then analyse it at scale to reveal patterns that are invisible in day-to-day reports.",
+    gets: ["Data integration and quality", "Advanced analytics", "Actionable reporting"] },
+  { id: "predictive", cat: "data", icon: Brain, name: "Predictive Analytics",
+    tagline: "Anticipate demand, risk and patient behaviour before they cost you.",
+    about: "Predictive models help your teams act early: on likely no-shows, high-risk patients, readmissions and demand for services.",
+    gets: ["Risk and no-show models", "Demand forecasting", "Decision support for clinicians and managers"] },
+  { id: "dataviz", cat: "data", icon: Activity, name: "Data Visualization",
+    tagline: "Dashboards that make every metric clear to the people who decide.",
+    about: "We design executive and operational dashboards around the questions your leaders actually ask, so insight is one glance away.",
+    gets: ["Executive and operational dashboards", "KPI design", "Self-service reporting"] },
+  { id: "abc", cat: "data", icon: Coins, name: "ABC Costing & Profitability Analytics",
+    tagline: "Know the true cost and profitability of every service.",
+    about: "Activity-based costing reveals what each service really costs, where margin is made or lost, and where efficiency can improve.",
+    gets: ["Activity-based cost models", "Service-line profitability", "Pricing and efficiency insights"] },
+  { id: "process", cat: "ops", icon: Workflow, name: "Process Optimization",
+    tagline: "Remove bottlenecks and redesign patient and operational flows.",
+    about: "We map how work really flows, find where time and money are lost, and redesign processes that teams can sustain.",
+    gets: ["Process mapping and analysis", "Bottleneck removal", "Standardised workflows"] },
+  { id: "his", cat: "ops", icon: MonitorCheck, name: "HIS Implementation Monitoring",
+    tagline: "Make sure your health information system delivers what was promised.",
+    about: "Independent monitoring of HIS implementation keeps scope, data quality and adoption on track from design to go-live.",
+    gets: ["Implementation tracking", "Data quality and adoption checks", "Early issue escalation"] },
+  { id: "commissioning", cat: "delivery", icon: Building2, name: "Hospital Commissioning",
+    tagline: "Open new facilities operationally ready from day one.",
+    about: "We prepare new hospitals for opening: workflows, staffing, systems and readiness checks, so day one runs as planned.",
+    gets: ["Operational readiness", "Workflow and staffing validation", "Go-live support"] },
+  { id: "change", cat: "delivery", icon: Users, name: "Healthcare Change Management",
+    tagline: "Help people adopt new systems and new ways of working.",
+    about: "Technology only pays off when people use it. We plan the communication, training and support that turn change into adoption.",
+    gets: ["Stakeholder engagement", "Training and communication", "Adoption tracking"] },
+  { id: "pm", cat: "delivery", icon: ClipboardCheck, name: "Project Management",
+    tagline: "Deliver healthcare projects on time, on scope and on budget.",
+    about: "Experienced healthcare project managers bring structure, governance and clear reporting to complex programmes.",
+    gets: ["Planning and governance", "Risk and progress tracking", "Vendor coordination"] },
+  { id: "alliances", cat: "delivery", icon: Handshake, name: "Strategic Alliances",
+    tagline: "Work with the best partner platforms, without vendor bias.",
+    about: "We are vendor-neutral. We can work with partner products such as Health Catalyst, or with any platform you prefer.",
+    gets: ["Unbiased solution evaluation", "Partner platforms and integration", "One coordinated delivery team"] },
+];
